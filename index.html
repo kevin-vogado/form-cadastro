@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Cadastro de Usuário</h1>
+    </header>
+    <main>
+        <button type="button" class="botao_cadastrar" id="cadastrar_usuario">Cadastrar usuário</button>
+        <table id="tabela_user" class="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data de Nascimento</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                    <th>Consultar/Deletar</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="tela_cadastro" id="tela_cadastro_js">
+            <div class="tela_cadastro_conteudo">
+                <header class="tela_cadastro_cabecalho">
+                    <h2>Novo usuário</h2>
+                    <span class="tela_cadastro_close" id="tela_cadastro_close_js">&#10006;</span>
+                </header>
+                <form id="tela_cadastro_form" class="tela_cadastro_formulario">
+                    <input type="text" id="nome_usuario" class="campo_cadastro" placeholder="Nome do usuário" required> 
+                    <input type="date" id="nasc_usuario" class="campo_cadastro" placeholder="Data de Nascimento" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                    <input type="tel" id="tel_usuario" class="campo_cadastro" placeholder="(xx)xxxxxxxx" required pattern="^\(\d{2}\)\d{4,5}\d{4}$">
+                    <input type="email" id="email_usuario" class="campo_cadastro" placeholder="E-mail do usuário" required>
+                </form>
+                <footer class="rodape_cadastro">
+                    <button id="botao_salvar_usuario" class="botao_salvar">Salvar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Feito por Ana Luiza Capistrano
+    </footer>
+    <script src="arquivo.js" defer></script>
+</body>
+</html>

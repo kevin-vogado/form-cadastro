@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --fonte-primaria: "Kanit", sans-serif;
+    --cor-primaria: #6A9C89;
+    --cor-secundaria: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: var(--cor-primaria);
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+
+main{
+    background-color: #E9EFEC;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: 5vh auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+footer{
+    background-color: #C4DAD2;
+}
+
+.titulo{
+    color: black;
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+}
+
+.botao_cadastrar{
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.botao_consultar{
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.botao_deletar{
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: #16423C;
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.tabela{
+    width: 100%;
+    user-select: none;
+    text-align: left;
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+}
+
+.tabela th{
+    height: 50px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.tabela td{
+    height: 50px;
+    padding-left: 20px;
+}
+
+.tabela th:last-child,
+.tabela td:last-child{
+    padding: 0;
+    min-width: 140px;
+    text-align: center;
+}
+
+.tela_cadastro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tela_cadastro.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.tela_cadastro_conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50vw;
+    margin: 15vh auto;
+    padding-bottom: 20px;
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+}
+
+.tela_cadastro_cabecalho{
+    display: flex;
+    position: relative;
+    justify-self: flex-end;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+
+}
+
+.tela_cadastro_close{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    user-select: none;
+    cursor: pointer;
+}
+
+.tela_cadastro_formulario{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.campo_cadastro{
+    width: calc(50% - 10px);
+    height: 40px;
+    outline-style: none;
+    border-style: none;
+    box-shadow: 0 0 2px black;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+.rodape_cadastro{
+    background-color: inherit;
+    text-align: right;
+    padding: 0 20px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    padding: 20px;
+    font-family: var(--fonte-primaria);
+}
