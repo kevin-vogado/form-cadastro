@@ -1,14 +1,10 @@
-# Entrega Sprint 1 - Programa de Bolsas Compass UOL / AWS - turma setembro/2024
-
-Entrega da atividade da primeira sprint do programa de bolsas Compass UOL para formação em Inteligência Artificial para AWS.
+# Formulário de Cadastro 
 
 ***
 
 ## Descrição do projeto
 
-O projeto foi desenvolvido para o programa de bolsas da Compass UOL. 
-
-A atividade consiste em um sistema de armazenamento de dados cadastrais feito em javascript, em que possui as funcionalidades de cadastrar, consultar e deletar usuário. Os dados para cadastramento de usuários são: nome, data de nascimento, telefone e e-mail, e foi utilizado o localStorage para armazenar esses dados.
+O projeto consiste em um sistema de armazenamento de dados cadastrais feito em javascript, em que possui as funcionalidades de cadastrar, consultar e deletar usuário. Os dados para cadastramento de usuários são: nome, data de nascimento, telefone e e-mail, e foi utilizado o localStorage para armazenar esses dados.
 
 ***
 
