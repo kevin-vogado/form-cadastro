@@ -31,14 +31,6 @@ Você pode acessar o [código fonte do projeto](https://github.com/Compass-pb-aw
 
 ***
 
-## Dificuldades enfrentadas
-
-* Dificuldade em realizar toda a lógica do arquivo.js;
-* Dificuldade com o padrão Factory;
-* Dificuldade com JavaScript
-
-***
-
 ## Autoria do projeto
 
 Desenvolvido por [Ana Luiza Capistrano dos Santos](https://github.com/luucaps)
