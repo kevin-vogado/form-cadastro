@@ -25,6 +25,13 @@ O projeto consiste em um sistema de armazenamento de dados cadastrais feito em j
 
 ***
 
+##Histórico de versões 
+
+- `Versão 1.0`: O arquivo.js havia 3 chamadas de escuta de evento para executar as funções: abrir tela de cadastro de novo usuário, fechar tela de cadastro de novo usuário e salvar dados de novo usuário.
+- `Versão 1.1`: As 3 chamadas de escuta de evento foram movidas para o arquivo index.html sendo executadas por 'onclick', visando tornar o código mais limpo e com uma melhor performance.
+
+***
+
 ## Acesso ao projeto
 
 Você pode acessar o [código fonte do projeto](https://github.com/Compass-pb-aws-2024-SETEMBRO/sprint-1-pb-aws-setembro/tree/ana-capistrano) ou baixá-lo.
