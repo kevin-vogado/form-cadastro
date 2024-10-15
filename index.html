@@ -11,7 +11,7 @@
         <h1 class="titulo">Cadastro de Usuário</h1>
     </header>
     <main>
-        <button type="button" class="botao_cadastrar" id="cadastrar_usuario">Cadastrar usuário</button>
+        <button type="button" class="botao_cadastrar" id="cadastrar_usuario" onclick="abrirTela()">Cadastrar usuário</button>
         <table id="tabela_user" class="tabela">
             <thead>
                 <tr>
@@ -29,7 +29,7 @@
             <div class="tela_cadastro_conteudo">
                 <header class="tela_cadastro_cabecalho">
                     <h2>Novo usuário</h2>
-                    <span class="tela_cadastro_close" id="tela_cadastro_close_js">&#10006;</span>
+                    <span class="tela_cadastro_close" id="tela_cadastro_close_js" onclick="closeTela()">&#10006;</span>
                 </header>
                 <form id="tela_cadastro_form" class="tela_cadastro_formulario">
                     <input type="text" id="nome_usuario" class="campo_cadastro" placeholder="Nome do usuário" required> 
@@ -38,7 +38,7 @@
                     <input type="email" id="email_usuario" class="campo_cadastro" placeholder="E-mail do usuário" required>
                 </form>
                 <footer class="rodape_cadastro">
-                    <button id="botao_salvar_usuario" class="botao_salvar">Salvar</button>
+                    <button id="botao_salvar_usuario" class="botao_salvar" onclick="saveUsuario()">Salvar</button>
                 </footer>
             </div>
         </div>

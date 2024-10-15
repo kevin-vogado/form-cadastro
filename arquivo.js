@@ -122,7 +122,4 @@ const consultarDeletar = (evento) => {
 updateTabela()
 
 //Ações de click
-document.getElementById('cadastrar_usuario').addEventListener('click', abrirTela)
-document.getElementById('tela_cadastro_close_js').addEventListener('click', closeTela)
-document.getElementById('botao_salvar_usuario').addEventListener('click', saveUsuario)
 document.querySelector('#tabela_user>tbody').addEventListener('click', consultarDeletar)
