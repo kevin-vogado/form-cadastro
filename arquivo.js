@@ -40,20 +40,22 @@ const limparCampos = () => {
 }
 
 //Interação com o html
-const saveUsuario = () =>{
-    if (campoValido()){
+function saveUsuario() {
+    if (campoValido()) {
         const usuario = {
-            nome     : document.getElementById('nome_usuario').value,
-            dataNasc : document.getElementById('nasc_usuario').value,
-            telefone : document.getElementById('tel_usuario').value,
-            email    : document.getElementById('email_usuario').value
+            nome: document.getElementById('nome_usuario').value,
+            dataNasc: document.getElementById('nasc_usuario').value,
+            telefone: document.getElementById('tel_usuario').value,
+            email: document.getElementById('email_usuario').value
         }
         createUsuario(usuario)
         console.log("Usuário cadastrado.")
         limparCampos()
         updateTabela()
         closeTela()
-    } 
+        return true; // Sucesso, retorna true
+    }
+    return false;  // Se a validação falhar, retorna false
 }
 
 //Criar linhas na tabela
