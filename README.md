@@ -41,7 +41,7 @@ Explicação do teste: Foi implementado um teste unitário na função saveUsuar
 
 O teste da funcionalidade 2 está descrito no arquivo test.js.
 
-Framework usado para testes: QUnit.
+Framework usado para teste unitário: QUnit.
 
 ***
 
