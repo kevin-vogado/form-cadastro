@@ -32,7 +32,16 @@ O projeto consiste em um sistema de armazenamento de dados cadastrais feito em j
 
 ***
 
-##Testes realizados 
+## Testes realizados 
+
+Nosso grupo decidiu testar a seguinte funcionalidade do sistema: 
+- `Funcionalidade 2`: Armazenar dados do usuário, como nome, data de nascimento, telefone e e-mail no localStorage.
+
+Explicação do teste: Foi implementado um teste unitário na função saveUsuario() para verificar se ela retorna false, isto é, se a função de salvar um usuário está salvando dados mesmo quando não é executada. Portanto, o teste aplicado visa validar que a função não salva um usuário fora da tela de cadastrar um novo usuário, isto também ajuda a identificar se os campos estão sendo corretamente limpos após a tela de cadastrar um usuário ser encerrada.
+
+O teste da funcionalidade 2 está descrito no arquivo test.js.
+
+Framework usado para testes: QUnit.
 
 ***
 
